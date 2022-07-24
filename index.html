@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="contact-form">
+    <div id="error"></div>
+    <h2>FORM</h2>
+    <form id="form" action="">
+      <p>Firstname</p>
+      <input type="text" placeholder="Firstname">
+
+      <p>Middlename</p>
+      <input type="text" placeholder="Last name">
+
+      <p>Lastname</p>
+      <input type="text" placeholder="Enter state">
+
+      <p>Email</p>
+      <input type="text" placeholder="Enter city">
+
+      <p>Country
+      <p>
+        <select id="country" onchange="country_code()">
+          <option value="select country">select country</option>
+          <option value="Argentina">&#x1F1E6;&#x1F1F7; Argentina</option>
+          <option value="Australia">&#x1F1E6;&#x1F1FA; Australia</option>
+          <option value="Belgium">&#x1F1E7;&#x1F1EA; Belgium</option>
+          <option value="Brazil">&#x1F1E7;&#x1F1F7; Brazil</option>
+          <option value="Canada">&#x1F1E8;&#x1F1E6; Canada</option>
+          <option value="Cyprus">&#x1F1E8;&#x1F1FE; Cyprus</option>
+          <option value="Denmark">&#x1F1E9;&#x1F1F0; Denmark</option>
+          <option value="France">&#x1F1EB;&#x1F1F7; France</option>
+          <option value="Ghana">&#x1F1EC;&#x1F1ED; Ghana</option>
+          <option value="Italy">&#x1F1EE;&#x1F1F9; Italy</option>
+          <option value="Mexico">&#x1F1F2;&#x1F1FD; Mexico</option>
+          <option value="Nigeria">&#x1F1F3;&#x1F1EC; Nigeria</option>
+          <option value="Zambia">&#x1F1FF;&#x1F1F2; Zambia</option>
+        </select>
+        <input type="tel" id="output" placeholder="phone no" minlength="10" maxlength="14" onchange="num()">
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
